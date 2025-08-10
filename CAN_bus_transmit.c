@@ -1,3 +1,5 @@
+// CAN bus transmit
+
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include <stdio.h>
@@ -52,4 +54,5 @@ void app_main(void)
     // Stop and uninstall TWAI driver
     twai_stop();
     twai_driver_uninstall();
+
 }
