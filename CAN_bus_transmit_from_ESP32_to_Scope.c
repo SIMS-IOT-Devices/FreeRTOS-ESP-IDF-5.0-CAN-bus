@@ -1,4 +1,4 @@
-// CAN bus transmit
+// CAN bus transmit from ESP32 to Scope
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -56,3 +56,4 @@ void app_main(void)
     twai_driver_uninstall();
 
 }
+
