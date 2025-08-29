@@ -1,4 +1,4 @@
-// CAN bus transmit from ESP32 to Scope
+// CAN bus transmission using TWAI (Two-Wire Automotive Interface) driver on ESP32 in ESP IDF 5.0
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -56,5 +56,6 @@ void app_main(void)
     twai_driver_uninstall();
 
 }
+
 
 
