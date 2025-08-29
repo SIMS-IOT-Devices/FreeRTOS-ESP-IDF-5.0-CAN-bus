@@ -33,8 +33,8 @@ void app_main(void)
     // Prepare a TWAI message
     twai_message_t tx_msg = {
         .identifier = 0x001,
-        .flags = 0,
-        .data_length_code = 1, // Data length code (DLC)
+        .flags = 0,            // 11-bit ID
+        .data_length_code = 1, // Number of data fields
         .data = {0x01}};
 
     // Transmit the message
@@ -56,4 +56,5 @@ void app_main(void)
     twai_driver_uninstall();
 
 }
+
 
